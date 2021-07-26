@@ -8,6 +8,8 @@ import Portfolio from './components/portfolio/Portfolio';
 
 import Contact from './components/contact/Contact';
 
+import Sidebar from './components/sidebar/Sidebar';
+
 import './app.scss';
 
 import { useState } from 'react';
@@ -21,6 +23,8 @@ function App() {
   return (
     <div className="app">
     <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+    <Sidebar menuOpen={menuOpen} setMenuOpen={setMenuOpen}  />
     
       <div className="sections">
 
