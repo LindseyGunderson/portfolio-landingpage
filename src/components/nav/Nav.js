@@ -5,7 +5,9 @@ export default function Nav({menuOpen, setMenuOpen}) {
         <div className={"navbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="nav-logo">
-                    <a href="#intro">LOGO</a>
+                    <a href="#intro">
+                        <img src="assets/main-logo.svg" alt="Lindsey Gunderson Logo" />
+                    </a>
                 </div>
                 <div className="nav-links">
                    <div className="hamburger" onClick={()=> setMenuOpen(!menuOpen)}>
