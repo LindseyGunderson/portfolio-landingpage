@@ -6,9 +6,17 @@
     display: flex;
     overflow: hidden;
 
+    @include mobile{
+
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
         .left {
 
             flex: 0.5;
+
 
             .wrapper {
 
@@ -20,17 +28,46 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile{
+
+                    padding: 0 0;
+                    text-align: center;
+
+                }
+
                 h1 {
 
                     font-size: 30px;
                     padding: 1rem 1rem;
                     color: $primary-blue;
+
+                    @include mobile{
+
+                        padding: 0.2rem 0.2rem;
+                        font-size: 25px;
+    
+                    }
                 }
 
                 span {
 
                     color: $secondary-teal;
                     font-size: 50px;
+
+                    @include mobile{
+
+                        font-size: 40px;
+    
+                    }
+                }
+
+                p {
+
+                    @include mobile{
+
+                        padding: 0 1rem;
+    
+                    }
                 }
             }
 
@@ -39,6 +76,12 @@
                 position: absolute;
                 bottom: 50px;
                 left: 50%;
+
+                @include mobile{
+
+                    bottom: 10px;
+
+                }
 
                 img {
 
@@ -72,16 +115,35 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
 
-            .imgContainer {
+            @include mobile{
+
+                text-align: center;
+                align-items: flex-start;
+
+            }
+
+            .imageContainer {
 
                 width: 700px;
                 height: 700px;
-            }
-            
-            img {
 
-                height: 100%;
+                    img {
+
+                        height: 65%;
+                        margin: 4rem 3rem;
+
+                        @include mobile{
+
+                            height: 40%;
+                            margin: 2rem 0;
+                            
+        
+                        }
+
+                    }
+
             }
         }
 

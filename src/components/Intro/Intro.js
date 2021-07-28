@@ -6,7 +6,7 @@ export default function Intro() {
             
             <div className="left">
                 <div class="wrapper">
-                    <h1>Hi there, I'm <span>Lindsey</span></h1>
+                    <h1>Hi there, I'm <br></br><span>Lindsey</span></h1>
                     <p>Recently I gradudated from the BCIT New Media and Web Development program.
                         My career goal is to push my skills and work towards becoming a Full-Stack Developer.
                     </p>
@@ -18,7 +18,7 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="imageContainer">
-                    <img src="assets/programming-header.jpg" ></img>
+                    <img src="assets/programming-header.jpg" />
                 </div>
             </div>
         
