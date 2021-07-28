@@ -36,8 +36,9 @@ function App() {
 
         <Contact />
 
-      </div>
+       
 
+      </div>
 
     </div>
   );
