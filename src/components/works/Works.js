@@ -72,8 +72,10 @@ export default function Works() {
                         </div>
 
                         <div className="right">
-
-                            <img src={ project.img } />
+<div class="imgContainer">
+    
+                                <img src={ project.img } />
+</div>
 
                         </div>
                     </div>
